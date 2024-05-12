@@ -76,6 +76,7 @@
             this.Vpis_btn.TabIndex = 4;
             this.Vpis_btn.Text = "Vpisi";
             this.Vpis_btn.UseVisualStyleBackColor = true;
+            this.Vpis_btn.Click += new System.EventHandler(this.Vpis_btn_Click);
             // 
             // ustvari_upr
             // 
@@ -85,6 +86,7 @@
             this.ustvari_upr.TabIndex = 5;
             this.ustvari_upr.Text = "Ustvari uporabnika";
             this.ustvari_upr.UseVisualStyleBackColor = true;
+            this.ustvari_upr.Click += new System.EventHandler(this.ustvari_upr_Click);
             // 
             // Login
             // 

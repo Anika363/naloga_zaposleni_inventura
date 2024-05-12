@@ -47,6 +47,7 @@
             this.comboBox_barva = new System.Windows.Forms.ComboBox();
             this.comboBox_pisava = new System.Windows.Forms.ComboBox();
             this.Ustvali = new System.Windows.Forms.Button();
+            this.nazaj_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ime_upr
@@ -207,12 +208,24 @@
             this.Ustvali.TabIndex = 18;
             this.Ustvali.Text = "Ustvari";
             this.Ustvali.UseVisualStyleBackColor = true;
+            this.Ustvali.Click += new System.EventHandler(this.Ustvali_Click);
+            // 
+            // nazaj_btn
+            // 
+            this.nazaj_btn.Location = new System.Drawing.Point(114, 474);
+            this.nazaj_btn.Name = "nazaj_btn";
+            this.nazaj_btn.Size = new System.Drawing.Size(100, 47);
+            this.nazaj_btn.TabIndex = 19;
+            this.nazaj_btn.Text = "Nazaj";
+            this.nazaj_btn.UseVisualStyleBackColor = true;
+            this.nazaj_btn.Click += new System.EventHandler(this.nazaj_btn_Click);
             // 
             // Ustavi_uporabnika
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(997, 600);
+            this.Controls.Add(this.nazaj_btn);
             this.Controls.Add(this.Ustvali);
             this.Controls.Add(this.comboBox_pisava);
             this.Controls.Add(this.comboBox_barva);
@@ -261,5 +274,6 @@
         private System.Windows.Forms.ComboBox comboBox_barva;
         private System.Windows.Forms.ComboBox comboBox_pisava;
         private System.Windows.Forms.Button Ustvali;
+        private System.Windows.Forms.Button nazaj_btn;
     }
 }

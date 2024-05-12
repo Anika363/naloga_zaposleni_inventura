@@ -53,6 +53,7 @@
             this.listbox_zaposlenih.Name = "listbox_zaposlenih";
             this.listbox_zaposlenih.Size = new System.Drawing.Size(166, 308);
             this.listbox_zaposlenih.TabIndex = 1;
+            this.listbox_zaposlenih.SelectedIndexChanged += new System.EventHandler(this.listbox_zaposlenih_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -80,6 +81,7 @@
             this.listbox_projektov.Name = "listbox_projektov";
             this.listbox_projektov.Size = new System.Drawing.Size(163, 308);
             this.listbox_projektov.TabIndex = 4;
+            this.listbox_projektov.SelectedIndexChanged += new System.EventHandler(this.listbox_projektov_SelectedIndexChanged);
             // 
             // btn_nastavi
             // 
@@ -89,6 +91,7 @@
             this.btn_nastavi.TabIndex = 5;
             this.btn_nastavi.Text = "Nastavi Vodjo";
             this.btn_nastavi.UseVisualStyleBackColor = true;
+            this.btn_nastavi.Click += new System.EventHandler(this.btn_nastavi_Click);
             // 
             // Postavi_vodjo
             // 
@@ -103,6 +106,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Postavi_vodjo";
             this.Text = "Postavi_vodjo";
+            this.Load += new System.EventHandler(this.Postavi_vodjo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

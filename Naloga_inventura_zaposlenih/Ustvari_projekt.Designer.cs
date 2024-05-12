@@ -33,6 +33,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.ime_projekta = new System.Windows.Forms.TextBox();
             this.opis_projekta = new System.Windows.Forms.RichTextBox();
+            this.btn_ustvari = new System.Windows.Forms.Button();
+            this.btn_nazaj = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -64,10 +66,11 @@
             // 
             // ime_projekta
             // 
-            this.ime_projekta.Location = new System.Drawing.Point(220, 180);
+            this.ime_projekta.Location = new System.Drawing.Point(220, 177);
             this.ime_projekta.Name = "ime_projekta";
-            this.ime_projekta.Size = new System.Drawing.Size(100, 22);
+            this.ime_projekta.Size = new System.Drawing.Size(197, 22);
             this.ime_projekta.TabIndex = 3;
+            this.ime_projekta.TextChanged += new System.EventHandler(this.ime_projekta_TextChanged);
             // 
             // opis_projekta
             // 
@@ -77,11 +80,33 @@
             this.opis_projekta.TabIndex = 4;
             this.opis_projekta.Text = "";
             // 
+            // btn_ustvari
+            // 
+            this.btn_ustvari.Location = new System.Drawing.Point(714, 535);
+            this.btn_ustvari.Name = "btn_ustvari";
+            this.btn_ustvari.Size = new System.Drawing.Size(115, 55);
+            this.btn_ustvari.TabIndex = 5;
+            this.btn_ustvari.Text = "Ustvari";
+            this.btn_ustvari.UseVisualStyleBackColor = true;
+            this.btn_ustvari.Click += new System.EventHandler(this.btn_ustvari_Click);
+            // 
+            // btn_nazaj
+            // 
+            this.btn_nazaj.Location = new System.Drawing.Point(100, 525);
+            this.btn_nazaj.Name = "btn_nazaj";
+            this.btn_nazaj.Size = new System.Drawing.Size(105, 65);
+            this.btn_nazaj.TabIndex = 6;
+            this.btn_nazaj.Text = "Nazaj";
+            this.btn_nazaj.UseVisualStyleBackColor = true;
+            this.btn_nazaj.Click += new System.EventHandler(this.btn_nazaj_Click);
+            // 
             // Ustvari_projekt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(974, 651);
+            this.Controls.Add(this.btn_nazaj);
+            this.Controls.Add(this.btn_ustvari);
             this.Controls.Add(this.opis_projekta);
             this.Controls.Add(this.ime_projekta);
             this.Controls.Add(this.label3);
@@ -102,5 +127,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox ime_projekta;
         private System.Windows.Forms.RichTextBox opis_projekta;
+        private System.Windows.Forms.Button btn_ustvari;
+        private System.Windows.Forms.Button btn_nazaj;
     }
 }
